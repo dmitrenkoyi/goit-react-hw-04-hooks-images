@@ -1,10 +1,8 @@
-import { Component } from 'react';
 import Loader from 'react-loader-spinner';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
-class LoaderSpinner extends Component {
-  render() {
-    return (
+function LoaderSpinner() {
+  return (
       <Loader
         type="Oval"
         color="#00BFFF"
@@ -14,7 +12,6 @@ class LoaderSpinner extends Component {
         className="LoaderSpinner"
       />
     );
-  }
 }
 
 export default LoaderSpinner;
